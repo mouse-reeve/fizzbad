@@ -1,9 +1,9 @@
 ''' waaaavy '''
-import math
+from math import cos, pi
 
 for i in range(1, 101):
     output = ''
-    output += abs(int(math.cos((i * math.pi) / 3))) * 'fizz'
-    output += abs(int(math.cos((i * math.pi) / 5))) * 'buzz'
-    output += abs(int(math.cos(len(output) / 4))) * str(i)
+    output += abs(int(cos((i * pi) / 3))) * 'fizz'
+    output += abs(int(cos((i * pi) / 5))) * 'buzz'
+    output += abs(int(cos(len(output) / 4))) * str(i)
     print(output)
